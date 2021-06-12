@@ -19,7 +19,7 @@ var gameOver, restart;
 function preload(){
   pathImg = loadImage("Road.png");
   mainRacerImg1 = loadAnimation("mainPlayer1.png","mainPlayer2.png");
-  mainRacerImg2= loadAnimation("images/mainPlayer3.png");
+  mainRacerImg2= loadAnimation("mainPlayer3.png");
   
   oppPink1Img = loadAnimation("opponent1.png","opponent2.png");
   oppPink2Img = loadAnimation("opponent3.png");
@@ -30,7 +30,7 @@ function preload(){
   oppRed1Img = loadAnimation("opponent7.png","opponent8.png");
   oppRed2Img = loadAnimation("opponent9.png");
   
-  cycleBell = loadSound("bell.mp3");
+
   gameOverImg = loadImage("gameOver.png");
 }
 
@@ -85,9 +85,7 @@ function draw() {
   }
   
     //code to play cycle bell sound
-  if(keyDown("space")) {
-    cycleBell.play();
-  }
+ 
   
   //creating continous opponent players
   var select_oppPlayer = Math.round(random(1,3));
